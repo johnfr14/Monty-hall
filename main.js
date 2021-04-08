@@ -53,6 +53,11 @@ console.log(`Très bien tu as choisi la ${chalk.yellow(tab[0][playerChoice])}. M
 // derniere chance pour le joueur
 let playerChange = readLine.keyInYN('\nVoulez changer votre choix ? derniere chance ! : ')
 
+
+
+
+//--------3 EME ÉTAPE--------------------------END GAME----------------------------------------------//
+
 // a t'il gagné ? a t'il perdu ?
 switch (playerChange) {
   case true :
@@ -77,7 +82,5 @@ console.log(chalk.bgBlack(`      Le tableau !       \n ${tab[0]} \n    ↓      
 console.log(`Choix initiale du joueur : ${tab[0][playerChoice]}\n`)
 console.log(`Le joueur a t'il changé son premier choix ? : ${!!playerChange ? 'oui' : 'non'}\n`)
 
-
-//--------3 EME ÉTAPE--------------------------END GAME----------------------------------------------//
-
+// try again ?
 } while (readLine.keyInYN('Voulez vous rejouer ? : '))
