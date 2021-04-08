@@ -56,6 +56,11 @@ let playerChange = readLine.keyInYN('\nVoulez changer votre choix ? derniere cha
 
 
 
+
+
+
+
+
 //--------3 EME ÉTAPE--------------------------END GAME----------------------------------------------//
 
 // a t'il gagné ? a t'il perdu ?
@@ -78,6 +83,7 @@ switch (playerChange) {
     console.log(chalk.bgBlackBright('\nFelicitation vous avez ni*** mon code !!!!\n'))
 }
 
+// display result
 console.log(chalk.bgBlack(`      Le tableau !       \n ${tab[0]} \n    ↓      ↓      ↓      \n ${tab[1]}   \n`))
 console.log(`Choix initiale du joueur : ${tab[0][playerChoice]}\n`)
 console.log(`Le joueur a t'il changé son premier choix ? : ${!!playerChange ? 'oui' : 'non'}\n`)
